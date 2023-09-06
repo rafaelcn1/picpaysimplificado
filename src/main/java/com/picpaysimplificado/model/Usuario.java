@@ -5,10 +5,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
-@Data
+@Data // Parar Criar todos os gets, sets, equals, toString e Hashcode
+@AllArgsConstructor // Parar criar o construtor que aceita todos os campos da classe como argumentos.
 public class Usuario {
 
 	@Id
@@ -26,5 +28,7 @@ public class Usuario {
 	private String password;
 	
 	private TipoUsuario tipoUsuario;
+	
+	private Double carteira;
 
 }
