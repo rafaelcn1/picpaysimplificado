@@ -2,6 +2,5 @@ package com.picpaysimplificado.model;
 
 public enum TipoUsuario {
 
-	LOJISTA,
-	COMUM
+	LOJISTA, COMUM
 }
